@@ -1,23 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import useDimensions from './util/useDimensions';
 
 function App() {
+  const [renders, setRenders] = useState<number>(0);
+  const {height, width}  = useDimensions();
+
+  useEffect(() => {
+    setRenders(renders + 1);
+  }, [height, width])
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          Windows Dimensions has changed!
+          <br/>
+          <code>{height} x {width}</code>
+          <br/>
+          <code>{renders} Re-Renders</code>
       </header>
     </div>
   );
