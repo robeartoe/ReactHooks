@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Should render correctly - Snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    Windows Dimensions has changed!
+    <br />
+    <code>
+      <span
+        id="height"
+      >
+        768
+      </span>
+      x
+      <span
+        id="width"
+      >
+        1024
+      </span>
+    </code>
+    <br />
+    <code>
+      <span
+        id="renders"
+      >
+        0
+      </span>
+       Re-Renders
+    </code>
+  </header>
+</div>
+`;

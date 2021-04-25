@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {default as DimensionsHook} from './dimensionsHook';
+import {default as GenericHook} from './genericHook'
 import * as serviceWorker from './serviceWorker';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+          <Route path="/dimensions-hook">
+            <DimensionsHook />
+          </Route>
+          <Route path="/generic-hook">
+            <GenericHook />
+          </Route>
+        </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

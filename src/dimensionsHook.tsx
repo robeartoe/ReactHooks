@@ -16,9 +16,15 @@ function App() {
       <header className="App-header">
           Windows Dimensions has changed!
           <br/>
-          <code>{height} x {width}</code>
+          <code>
+            <span id="height">{height}</span> 
+            x 
+            <span id="width">{width}</span> 
+          </code>
           <br/>
-          <code>{renders} Re-Renders</code>
+          <code>
+            <span id="renders">{renders}</span> Re-Renders
+          </code>
       </header>
     </div>
   );
