@@ -1,6 +1,7 @@
 # Custom React Hooks
-This mini repository is an example of custom react hooks. How they are used, and why they're useful.
 ![Demo](Images/demo.gif)
+
+This mini repository is an example of custom react hooks. How they are used, and why they're useful.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
